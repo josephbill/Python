@@ -47,3 +47,76 @@ exit()  quits ipdb and refactors back to main shell
 1. simple prints : prove that the values are there 
 2. using pytest : TEST DRIVEN DEVELOPMENT 
 3. ipdb : Interactive shell to investigate your function
+
+
+## Data Structures
+- A way of organizing and storing data efficiently in a computer program 
+- Python several built in data structures 
+1. Lists 
+2. Tuples 
+3. Dictionaries 
+4. Sets 
+
+
+### lists 
+A list is an ordered, mutable collections of items 
+Items can be of different data types 
+
+variablename = [1,2,3,4,5,"Joseph", true]
+
+### tuples 
+A tuple is an ordered, immutable collection of items 
+
+my_tuple = (10,20,"Joseph",true)
+
+### Dictionary 
+A dictionary is an unordered collection of key and value pairs. Keys are unique, and used to access values 
+Dictionaries are mutable, meaning values can be updated and new key values can be added. 
+my_dict = {
+    "key1" : "value",
+    "Key2" : {
+        "Key1" : [
+            1,2,3,5,
+        ]
+    }
+}
+
+
+### Sets 
+A set is an unordered collection of UNIQUE ELEMENTS. Sets are useful when we need to ensure all elements are unique 
+
+myset = {1,2,3,5,6} : literal notation
+myset = set([1,2,3,4]) : set constructor
+
+### Loops 
+1. Executing a block a code repeatedly 
+
+for loop : for ...  in  : used to iterate of a sequence (list, tuples, dictionaries , sets, Strings)
+"String" : x.length  ["s","t","r" .... ]
+
+
+, while loop : repeats as long as a condition true 
+
+
+Looping data structures is simply the process of access and manipulating elements within collections like lists, tuples , dictionaries ,sets and strings 
+
+for .... in 
+
+
+## COMPUTATIONAL THINKING 
+Logical approach to analysing a problem, produce a solution that can be understood by both humans and by computers
+
+1. Abstraction : filtering out information that is not necessary to solve a problem 
+2. Decomposition : Breaking down problems into sub problems , decomposition leads to modularity -> procedures (functions)
+3. Data Modelling : Involves analysing and organising data. 
+4. Pattern Recognition : Looking for patterns or common solutions to problems , data types and in built operations, searching and sorting 
+5. Algorithmic thinking : Algorithm design (step by step process to output desired solution)
+
+
+Sequences 
+1. Assignments : variables 
+2. Sequence : number of steps to be performed one after the other esp. on the assignment (1)
+3. Selection : under certain conditions perform some steps , otherwise different or no steps.
+4. Repetition : a sequence of steps performed a number of times 
+
+https://gist.github.com/josephbill/a600b09026559760ad61fdf2973ba7c7

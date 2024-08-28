@@ -30,3 +30,19 @@ outer_function()
 
 print(len(global_Var))
     
+
+#  to loop a string 
+message = "hello"
+list_e = []
+for char in message:
+    list_e.append(char)
+    print(char)
+    
+print(list_e)
+    
+## zip :; allows us to loop two or more lists(or other iterables/sequences) in parallel
+names = ["joseph","alice"] 
+scores = ["30", "40"]
+for name,score in zip(names,scores):
+    print(f'{name} : scored {score}')
+
