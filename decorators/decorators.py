@@ -70,8 +70,8 @@ def divide(a,b):
 def get_item(data,index):
     return data[index]
 
-print(
-divide(10,0))
-
+print(divide(10,0))
 print(get_item([1,2,3],5))
+
+
 

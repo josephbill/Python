@@ -34,6 +34,7 @@ python -m ipdb yourscript.py
 
 Common Ipdb commands 
 1. n : next : executes the current line and stops at the next line in the current function
+
 2. s : step : step into the function called in the current line 
 3. c : continue : continue the execution until the next break point 
 4. p : print : evaluates and prints an expression 
@@ -120,3 +121,50 @@ Sequences
 4. Repetition : a sequence of steps performed a number of times 
 
 https://gist.github.com/josephbill/a600b09026559760ad61fdf2973ba7c7
+
+
+### Decorators 
+A feature that allows modification or extension of behaviors of functions or methods 
+Tasks : logging, access control , memoization
+
+A decorator  is a FUNCTION that takes another function as an argument and returns a new function that usually extends the behaviour of the original function.  
+
+
+### Comprehensions 
+Comprehensions are a concise way to create sequences and collections 
+- lists , dictionaries and sets
+ 
+syntax for comprehensions 
+[expressions for item in iterable if condition]
+
+
+### OOP (Object Oriented Programming)
+- a model(a way of writing code) that centers around OBJECTS( - is sth that has behaviours i.e. methods and attributes / data type : data structure that contains key/value pairs ) rather than functions
+
+#### Key concepts 
+1. CLASS : - a blueprint for creating objects : instructions on how to create the objects : 
+2. OBJECTS : - an object is specific to a blueprint(class)
+             - an instance of a class. 
+             - an object has to have its own set of attributes and should be able to perform actions defined by the class.(behaviours)
+3. Attributes : - the characteristics or properties of an object. These are variables which are associated with the object. 
+4. Methods : - Functions defined within that class that describes the behaviours of our objects
+
+
+## PILLARS OF OOP 
+ - Inheritance  
+
+ - Encapsulation 
+ - Abstraction 
+ - Polymorphism  
+
+
+1. Inheritance : ref: parent class /child/sub class 
+
+- allows a class to inherit attributes and methods from another class. This promotes code reuse : establishes a natural hierachy between classes 
+ #### Key point 
+ 1. To access attributes use the super().__init__ to get value initialization 
+ 2. To acess methods , simply call the method '
+ 3. We can override the methods - 1. Create a method in the derived class with the same name as in the base class , 2. Give you different logic implementation.
+
+
+

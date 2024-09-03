@@ -13,5 +13,5 @@ print(unique_set_c)
 
 # suppose you have a list of words and you want to find the unique lengths of those words 
 # use a set comprehension to achieve the same 
-# input : ["apple", "banana","Cherry", "grape", "apple", "apple", "orange"]
+# input : ["apple", "banana","Cherry", "grape", "apple", "apple", "orange--"]
 # output : {5,6}
