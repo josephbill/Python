@@ -10,15 +10,16 @@ def myDecorator(func):
     
     return anotherfunction
 
-@myDecorator
-def simpleExecution():
-    print('this is a simple print')
+def inputvalidation(functionname):
+    if function.__name__ == functionname:
+        pass
+   
+
    
 @myDecorator 
 def another_function():
     print('this is a simple print from another function')
 
-simpleExecution()
 
 '''
 decorators with arguments 
@@ -72,6 +73,4 @@ def get_item(data,index):
 
 print(divide(10,0))
 print(get_item([1,2,3],5))
-
-
 

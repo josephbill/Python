@@ -167,4 +167,55 @@ syntax for comprehensions
  3. We can override the methods - 1. Create a method in the derived class with the same name as in the base class , 2. Give you different logic implementation.
 
 
+2. Encapsulation :: binding both method and data together , bundling data(attributes) and methods that operate on the data into a single unit or class and to restrict access to some of the object components 
+
+3. Abstraction :: hiding complex implementation details and only showing necessary features of an object. Focus is then on what the object does rather than how it does it (more for the user)
+
+x = "joseph"
+x.upper()
+
+4. Polymorphism :: ability of an object to have more than one form. And its achieved through method overrides 
+
+
+0. Code challenge corrections 
+1. Class attributes and methods 
+2. Memoization / Dynamic Programming : algorithms : Data modelling 
+
+
+## class attributes and methods
+class attributes and methods are concepts related to the scope and behaviour of data and functions within a class. 
+
+## class attributes 
+- shared across all instances of the class 
+- defined directly within the class body 
+- outside methods 
+- access using the class name or the instance of the class 
+
+## class methods 
+- the methods are bound to the class rather than instances of the class 
+- They can access and modify our class attributes 
+- Are defined directly within the class body using the @classmethod decorator 
+- first parameter is always cls. class
+
+
+## Dynamic Programming 
+- is a method used to solve complex problems by breaking them down into simpler subproblems 
+- Particularly useful when the problems inolve overlapping subproblems and optimal substructures
+
+Overlapping subproblem 
+:: the same subproblems are solved multiple times , leads to redudancy 
+
+Optimal substructures : solution to a problem can be constructed from the solutions to its subproblems :: (Recursion)
+
+- Usage of objects/dictionaries : 
+### Memoization as a technique to dynamic programming
+Memoization is a technique where we store the results of expensive functions and reuses them when the same inputs occur 
+
+Fibonnacci sequence : a sequence where the current number is the sum of the previous two numbers where the first two numbers are 0 and 1 / 1 and 1 / 1,2 / 3,5
+1,1,2,3,5,8,13,21,34 .... 
+0,1,1,2,3
+
+f(n : 1) = F(n-1) + F(n-2) for n > 2 
+
+memoization and tabulation as key concepts in dynamic programming
 

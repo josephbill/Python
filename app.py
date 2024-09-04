@@ -1,3 +1,4 @@
+from decorators.decorators import myDecorator, inputvalidation
 # global scope : a variable created at the top level of a script or outside any function 
 # Local scope : a variable created inside a function , and it can only accessed withing that function
 # Enclosing scope : This scope exists in a nested function, the enclosing scope is the scope of the outer function
@@ -5,7 +6,9 @@
 # Built in scope : This scope is reserved for python's built in functions (len, print)
 global_Var = "I am Global"
 
+@myDecorator
 def functionname():
+    inputvalidation(functionname)
     local_var = "I am local"
     print(global_Var)
     print(local_var)

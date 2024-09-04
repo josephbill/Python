@@ -11,6 +11,8 @@ class House:
 
     # class attributes
     name = "Joseph"
+    # a class attribute keeping count of the number of objects created from the house instance
+    house_count = 0
 
     def __init__(self,address,num_rooms,color,square_footage):
         # initialize our passed attributes 
@@ -21,11 +23,13 @@ class House:
         # it can only be modified from within the class 
         # provide a method to get the value attribute  
         self.__square_footage = square_footage #private attribute 
+        House.house_count += 1
+        
     
 
     # methods 
     def open_door(self):
-        return f'The door of {self.address} is opened {self.name}'
+        return f'The door of {self.address} is opened {House.name}'
     
     def turn_on_light(self):
         return f'The lights of {self.address.upper()} is turned on! {self.name}'
@@ -33,6 +37,12 @@ class House:
     # getter method 
     def get_square_footage(self): 
         return self.__square_footage
+    
+    @classmethod
+    def get_house_count(cls):
+        # modify the class attributes 
+        # logic around the class atrributes 
+        return f"Total houses : {cls.house_count}"
     
 class SmartHouse:
     def __init__(self, has_security_system):
@@ -69,6 +79,8 @@ class Bungalow(House):
 mansionA = Mansion("ABC Street",10,"blue","10sq",True,True)
 mansionB = Mansion("ABC Street B",12,"Black","10sq",False,False)
 
+print(f'Total Houses created by the system {House.house_count}')
+print(House.get_house_count())
 # print(f"Mansion : {mansionA.address}")
 # print(f"Mansion : {mansionB.address}")
 print(mansionA.turn_on_light("house"))
@@ -97,5 +109,6 @@ print(mansionB.__square_footage)
 # print(f'Mansion Address: {mansion.address} Room : {mansion.num_rooms}')
 # print(f'Bungalow Address: {bungalow.address} Room : {bungalow.num_rooms}')
 # print(mansion.turn_on_light())
+
 
 
