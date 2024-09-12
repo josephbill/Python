@@ -219,3 +219,14 @@ f(n : 1) = F(n-1) + F(n-2) for n > 2
 
 memoization and tabulation as key concepts in dynamic programming
 
+## Object Relationships 
+Object Relationships describe how objects are connected to each other in a program : 
+1. Cardinality of the relationships btw objects (how many instances of one class can be associated with one another)
+one to one : one object is associated with exactly one other object 
+one to many : one object is associated with multiple other objects 
+many to many : Multiple objects are asocciated with multiple objects on the other side of 
+the relationship.
+2. Nature of relationships btw the objects (how tightly objects are linked or dependent on each other)
+association :: independent objects that communicate when needed 
+aggregation :: One object 'has' another, but they exist independently  
+composition :: One object 'owns' another , and the owned object cannot exist independently
